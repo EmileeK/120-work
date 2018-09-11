@@ -12,6 +12,7 @@ The only problem that I ran into this week was that I could not manage to get my
 ### Learning Further
  With the Hello World Sketch we had the text "Hello World" I would like to know if it is possible to make the text bigger? Would use the # to make text bigger like a header or is it completely different?
 
-### Final Sketch
-This is what my final sketch looks like.
-![hw-3 Final Sketch](/Users/Emilee/Desktop/120-work/hw-3/hw-3_sketch.png)
+
+ ### Final Sketch
+ This is what my final sketch looks like.
+ ![hw-3 Final Sketch](/Users/Emilee/Desktop/120-work/hw-3/hw-3_sketch.png)
