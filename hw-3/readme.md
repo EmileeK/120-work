@@ -14,4 +14,4 @@ The only problem that I ran into this week was that I could not manage to get my
 
 ### Final Sketch
 This is what my final sketch looks like.
-![hw-3 Final Sketch](/Users/Emilee/Desktop/120-work/hw-3_sketch.png)
+![hw-3 Final Sketch](/Users/Emilee/Desktop/120-work/hw-3/hw-3_sketch.png)
