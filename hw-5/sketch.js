@@ -7,7 +7,7 @@ createCanvas( windowWidth, 900);
 let eyeAngle = 330;
 let whiteDot = 348;
 let x = 330
-let speed = 2;
+let speed = .5;
 
 function draw(){
 
@@ -58,11 +58,14 @@ push()
 fill('rgb(255, 255, 255)');
 ellipse(whiteDot, 310, 10, 10);
 
-// a condition to make the ball turn around
-if ( whiteDot > windowWidth) {
-speed = -2;
+// a condition to make the ball turn around when it hits the x coordinate of 350
+if ( whiteDot > 355) {
+speed = -.5;
 }
-
+// a condition to make the ball turn around when the ball is less then 330
+if (whiteDot < 330) {
+  speed = .5
+}
 whiteDot = whiteDot + speed;
 
 pop()
