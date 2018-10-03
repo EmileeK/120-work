@@ -59,9 +59,9 @@ c_col += random(100, 100);
 a_col = a_col % 255;
 c_col = c_col % 255;
 
-let line3_size = random(50, width-10)
+let line3_size = random(50, width-10);
 noFill();
 stroke(f_col, c_col, 255- a_col);
-quad(width/4, line3_size, line2_size, line3_size)
+quad(width/4, line3_size, line2_size, line3_size);
 
 }
