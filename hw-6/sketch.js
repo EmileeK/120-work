@@ -53,7 +53,7 @@ stroke(f_col, a_col, 255 - c_col);
 quad(width/2, line2_size, line_size, line2_size);
 
 a_col += random(0, 230);
-c_col += random(0, 100);
+c_col += random(100, 100);
 
 
 a_col = a_col % 255;
