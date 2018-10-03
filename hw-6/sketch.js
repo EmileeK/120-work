@@ -35,7 +35,7 @@ stroke( col_e, col_r, 255 + col_b );
 
 let line_size = random( 10, width-10 );
 map( 200, 0, 100, 0, width);
-quad(boxPos1, height/2, line_size, line_size );
+quad( boxPos1, height/2, line_size, line_size );
 
 let a_col = 50;
 let c_col = 100;
@@ -52,5 +52,15 @@ noFill();
 stroke(f_col, a_col, 255 - c_col);
 quad(width/2, line2_size, line_size, line2_size);
 
+a_col += random(0, 230);
+c_col += random(0, 100);
+
+a_col = a_col % 255;
+c_col = c_col % 255;
+
+let line3_size = random(50, width-10)
+noFill();
+stroke(f_col, c_col, 255- a_col);
+quad(width/4, line3_size, line2_size, line3_size)
 
 }
