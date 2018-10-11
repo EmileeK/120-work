@@ -20,7 +20,7 @@ Emilee Kenneally, 50
 ## How did you alter the sketch?
 To alter the sketch I:
 - Created a if statement that allowed the ball the change between three colors depending on where it was located on the screen according the varible ball.x and width of the sketch.
-- 
+-
 <!--
 Please describe how and why you changed the sketch?
 -->
