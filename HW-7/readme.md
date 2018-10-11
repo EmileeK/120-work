@@ -1,6 +1,6 @@
 Emilee Kenneally, 50
 
-[Live Sketch Link]()
+[Live Sketch Link](https://emileek.github.io/120-work/HW-7/)
 
 
 # HW 7 | Describe then Alter the Bouncing Ball
