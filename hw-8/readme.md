@@ -11,5 +11,5 @@ random.
 In the future of the course, I will like to learn more about what loops are
 capable of creating within the code, and how it can be manipulated into something creative
 
-[Live Sketch]()
-[Homework 8 Repo]()
+[Live Sketch](https://emileek.github.io/120-work/hw-8/)
+[Homework 8 Repo](https://github.com/EmileeK/120-work/tree/master/hw-8)
