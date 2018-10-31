@@ -12,6 +12,6 @@ In the weeks lesson we learn about functions and how we can define our own for w
 
 
 
-[Live_Sketch]()
+[Live_Sketch](https://emileek.github.io/120-work/hw-10/)
 
-[Week10_Repo]()
+[Week10_Repo](https://github.com/EmileeK/120-work/tree/master/hw-10)
