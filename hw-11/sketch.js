@@ -8,11 +8,7 @@ function setup() {
       shapes.push(b);
 }
 
-function setup() {
-    createCanvas(windowWidth, 400);
-    let b = new ShapeCrazy(width/2, height/2, 10);
-    shapes.push(b);
-}
+
 
 function mouseDragged() {
     let r = random(30,80);
@@ -20,13 +16,20 @@ function mouseDragged() {
     shapes.push(b);
 }
 
+function draw() {
+    background('rgb(39, 151, 201)');
+    for (let i = 0; i < shapes.length; i++) {
+        shapes[i].move();
+        shapes[i].display();
+    }
+
 class ShapeCrazy {
   //  setting variables for the shapes that are drawn later.
     constructor() {
         this.x = x;
         this.y = y;
         this.c = random(15, 70);
-        this.e = this.c *3;
+        this.e = this.c * 3;
         this.stroke_col= color(random(255), random(255), random(255));
 
     }
