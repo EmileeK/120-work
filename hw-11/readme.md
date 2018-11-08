@@ -12,6 +12,6 @@ To learn further with is week, I think I need to have better understanding of wh
 is not working. I keep trying to change that code to look more like the examples to try to see if the code will then work, but nothing seems to help get the code working. I was going to post of the disscussion board with the problems that I was having, but did not because it was late on wednesday when problems were occuring and did not know where to begin to ask for help.
 
 
-[Live_Sketch]()
+[Live_Sketch](https://emileek.github.io/120-work/hw-11/)
 
-[Repo_Week11]()
+[Repo_Week11](https://github.com/EmileeK/120-work/tree/master/hw-11)

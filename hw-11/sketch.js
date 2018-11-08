@@ -4,21 +4,20 @@ let shapes = [];
 
 function setup() {
     createCanvas(windowWidth, 800);
-    let movement = new ShpaeCrazy(width/2, height/2, 10)
-    shapes.push(movement);
+    let b = new ShapeCrazy(width/2, height/2, 10);
+      shapes.push(b);
 }
 
-function mouseDragged () {
-let movement= new ShapeCrazy(mouseX, mouseY, random(10, 50))
-  shapes.push(movement);
+function setup() {
+    createCanvas(windowWidth, 400);
+    let b = new ShapeCrazy(width/2, height/2, 10);
+    shapes.push(b);
 }
 
-function draw() {
-  background('rgb(70, 140, 203)');
-    for (let i = 0; i < ShapeCrazy.length; i++) {
-        shapes[i].move();
-        shapes[i].display();
-    }
+function mouseDragged() {
+    let r = random(30,80);
+    let b = new ShapeCrazy(mouseX, mouseY, r);
+    shapes.push(b);
 }
 
 class ShapeCrazy {
