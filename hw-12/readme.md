@@ -12,6 +12,6 @@ Throughout this week, I have tried a few different ways to create my sketch.
 
 
   ### Links.
-  [Live_Sketch]()
+  [Live_Sketch](https://emileek.github.io/120-work/hw-12/)
 
-  [Repo_12]()
+  [Repo_12](https://github.com/EmileeK/120-work/tree/master/hw-12)
