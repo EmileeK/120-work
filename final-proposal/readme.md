@@ -19,4 +19,7 @@ For this project that I am creating the first this that I need to understand to 
 To ensure that I will finish the final project on time, I will meet the self made deadlines that I gave me. This will help make sure that on the 10 of december I will have completed the project in full and made it.
 
 ### Work for Project.
-Up to this point in the project, I have not completed a lot in terms of what needs to be done. I have come up with a an idea, and started the base of the coding for the music visualizier.
+Up to this point in the project, I have not completed a lot in terms of what needs to be done. I have come up with a an idea, and started the base of the coding for the music visualizier
+
+
+[FinalProject_Proposal](https://github.com/EmileeK/120-work/tree/master/final-proposal)
