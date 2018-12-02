@@ -20,10 +20,10 @@ function draw() {
         squares[i].show();
 
     // Getting the shapes to change color when they touch..
-    for ( let j = 0; j < squares.length; j++){
-      // if (i != j squares[i].intersects(squares[j]));
+    for ( let k = 0; k < squares.length; k++){
+      // if (i =! k ; squares[i] this.intersects(squares[k]));
       squares[i].colorChange();
-      squares[j].colorChange();
+      squares[k].colorChange();
 
     }
     }
