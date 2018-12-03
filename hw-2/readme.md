@@ -31,3 +31,5 @@ I haven't comment on any posts in the issue forum this week. When I did look on
 the forum I did not see any posts related to the week.
 
 ![Image of my editor](/Users/Emilee/Desktop/120-work/hw-2/ScreenShot-editor.png)
+
+[Repo_Week2](https://github.com/EmileeK/120-work/tree/master/hw-2)
