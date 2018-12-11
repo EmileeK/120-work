@@ -1,68 +1,80 @@
-// var song;
-//
-// function preload(){
-//   song = loadSound("01-Make-It-Sweet.m4a");
-// }
-//
-// function setup() {
-//   createCanvas (300, 300);
-//   song.play();
-// }
-//
-// function draw() {
-//   background(0);
-//
-// }
-
-
 var song;
 var fft;
-var button;
+var w;
+var img;
+var amp;
 
-function toggleSong() {
-  if (song.isPlaying()) {
-    song.pause();
-  } else {
-    song.play();
-  }
+
+
+//  loading the the song to be played in the visualizer
+// loading the image that is going to be the background
+function preload(){
+song = loadSound("Teamwork.mp3");
+// song = loadSound("Make-It-Sweet.m4a");
+img = loadImage("Record.JPG.png");
+
 }
 
-function preload() {
-  song = loadSound('rainbow.mp3');
+function setup(){
+  // creating canvas size, the color for the dots that will be used later
+  // what to use degrees when angles instead of radians
+createCanvas(1000, 1000);
+// image(img , 0, 0, 1000, 1000);
+colorMode(HSB, 50);
+angleMode(DEGREES);
+song.play();
+// fft = new p5.FFT(0.9, 128);
+// using freqencies
+fft = new p5.FFT(0.8, 64);
+amp = new p5.Amplitude();
+
+
 }
 
-function setup() {
-  createCanvas(256, 256);
-  colorMode(HSB);
-  angleMode(DEGREES);
-  button = createButton('toggle');
-  button.mousePressed(toggleSong);
-  song.play();
-  fft = new p5.FFT(0.9, 128);
+function draw(){
+  // begining to draw the visualizer white a white background, then place the image over
+
+background('255');
+
+image(img , 0, 10, 1010,  1000);
+var spectrum = fft.analyze();
+// var vol = fft.getLevel();
+
+
+noStroke();
+translate(width / 2, height / 2);
+
+
+
+beginShape();
+for (var i = 0; i < spectrum.length; i++) {
+  var angle = map(i, 0, spectrum.length, 0, 360);
+  var amp = spectrum[i];
+  var r = map(amp, 0, 256, 20, 150);
+
+  var x = r * cos(angle);
+  var y = r * sin(angle);
+  strokeWeight(3);
+  stroke(i, 255, 255);
+// adding ellispse that will move with the frequency throughout the song.
+
+  line(10, 10, x * 4.5 , y * 4.5);
+  // rect(x * 2, y * 2, height - y);
+  fill(i, 255, 255)
+  ellipse(x * 2, y * 2, 8);
+  ellipse(x * 3, y * 3, 10);
+  rect(x * 4.5, y * 4.5, 12, 12);
+  // fill('rgb(57, 166, 182)');
+
+
 }
-
-function draw() {
-  background(0);
-  var spectrum = fft.analyze();
-  //console.log(spectrum);
-  //stroke(255);
-  noStroke();
-  translate(width / 2, height / 2);
-  //beginShape();
-  for (var i = 0; i < spectrum.length; i++) {
-    var angle = map(i, 0, spectrum.length, 0, 360);
-    var amp = spectrum[i];
-    var r = map(amp, 0, 256, 20, 100);
-    //fill(i, 255, 255);
-    var x = r * cos(angle);
-    var y = r * sin(angle);
-    stroke(i, 255, 255);
-    line(0, 0, x, y);
-    //vertex(x, y);
-    //var y = map(amp, 0, 256, height, 0);
-    //rect(i * w, y, w - 2, height - y);
-  }
-  //endShape();
-
-
+// adding white ellipses to the record player.
+endShape();
+rotate(PI)
+stroke(255)
+noFill();
+ellipse(0 , 10, width /2 , height / 2);
+ellipse(0 , 10, width / 1.5, height / 1.5);
+//  everything works up to this point
+// starting to add extra things
 }
