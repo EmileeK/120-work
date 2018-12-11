@@ -31,3 +31,8 @@ The success that I had while creating the code was accomplished throughtout many
 - The p5 Reference page.
   - The page help in terms of understanding what functions to use and what the parameters I need. It also gave a example to help me. For instance using the p5.FFT function, I did not know what the parameter smoothing was until I had messed with it on the p5 reference page. It was helpful to understand more about the functions I needed and used.
   -
+
+### Links.
+[FinalProject_Sketch](https://emileek.github.io/120-work/FinalProject/)
+
+[FinalProject_Repo](https://github.com/EmileeK/120-work/tree/master/FinalProject)
